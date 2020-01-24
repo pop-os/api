@@ -1,0 +1,22 @@
+[package]
+name = "pop-os-api"
+version = "0.1.0"
+authors = ["Michael Aaron Murphy <mmstick@pm.me>"]
+license = "MPL-2.0"
+edition = "2018"
+
+[[bin]]
+name = "pop-api"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+clap = "2"
+concat-in-place = "1"
+fomat-macros = "0.3"
+futures = "0.3"
+http = "0.2"
+isahc = { version = "0.8", default-features = false }
+serde = { version = "1.0", features = [ "derive" ]}
+serde_json = "1"
+thiserror = "1"
